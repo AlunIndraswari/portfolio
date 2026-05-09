@@ -458,7 +458,7 @@
             </div>
 
         <div class="pt-8 border-t border-outline-variant/20 flex gap-4">
-            <a href="#" id="modal-link" target="_blank" class="primary-gradient text-on-primary px-8 py-3 text-xs font-bold tracking-widest uppercase transition-all duration-300 hover:opacity-90 font-headline hidden">
+            <a href="#" id="modal-link" target="_blank" class="primary-gradient text-on-primary px-8 py-3 text-xs font-bold tracking-widest uppercase transition-all duration-300 hover:opacity-90 font-headline">
                 View_Repository
             </a>
         </div>
@@ -473,7 +473,7 @@
             tags: ['Computer Vision', 'ResNet50', 'Image Classification'],
             summary: 'Model klasifikasi Deep Learning untuk mendeteksi gambar buatan AI.',
             fullDesc: 'Membangun model klasifikasi Deep Learning menggunakan arsitektur ResNet50 untuk mendeteksi gambar buatan AI. <br><br><b>Masalah:</b> Meningkatnya penyebaran gambar AI yang sulit dibedakan oleh mata manusia.<br><b>Solusi:</b> Model dilatih dengan ribuan dataset citra asli dan sintetis, menghasilkan metrik evaluasi yang solid untuk memverifikasi keaslian media digital.',
-            link: 'https://github.com/xxxxxxx',
+            link: 'https://github.com/AlunIndraswari/detectify-ai',
             image: 'assets/img/detectify-cover.png',
             imageAlt: 'Detectify AI Cover',
             primaryBadge: 'ResNet50',
@@ -540,7 +540,7 @@
             tags: ['Python', 'Flask', 'Regex', 'Data Privacy'],
             summary: 'Sensor data pribadi (PII) dan filter konten otomatis untuk menjamin privasi.',
             fullDesc: 'Aplikasi web cerdas untuk menyensor data pribadi (PII) dan filter konten kasar secara otomatis menggunakan Regular Expressions.<br><br><b>Masalah:</b> Risiko kebocoran data pribadi (NIK, Email) dan penyebaran konten tidak pantas dalam komunikasi digital.<br><b>Solusi:</b> Membangun mesin pemrosesan teks berbasis Flask yang mampu mengidentifikasi dan menyembunyikan informasi sensitif secara real-time tanpa menyimpan data pengguna, menjamin privasi tetap terjaga (Zero-Retention Policy).',
-            link: 'https://github.com/username/maskify',
+            link: 'https://github.com/AlunIndraswari/maskify',
             icon: 'enhanced_encryption',
             primaryBadge: 'Regex',
             secondaryBadge: 'Flask',
@@ -650,9 +650,9 @@
 
         if (project.link && project.link !== 'null') {
             modalLink.href = project.link;
-            modalLink.hidden = false;
+            modalLink.style.display = 'inline-block';
         } else {
-            modalLink.hidden = true;
+            modalLink.style.display = 'none';
         }
 
         modal.classList.remove('hidden');
