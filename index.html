@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title> alun indraswari | Data Scientist</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "secondary-fixed": "#dae2fd",
+                        "surface-container-highest": "#2d3449",
+                        "inverse-surface": "#dae2fd",
+                        "surface-tint": "#00e475",
+                        "tertiary-container": "#ffba79",
+                        "secondary-fixed-dim": "#bec6e0",
+                        "on-error": "#690005",
+                        "primary-container": "#00e676",
+                        "on-secondary": "#283044",
+                        "secondary-container": "#3f465c",
+                        "on-secondary-fixed-variant": "#3f465c",
+                        "primary-fixed-dim": "#00e475",
+                        "on-primary-container": "#00612e",
+                        "error": "#ffb4ab",
+                        "outline-variant": "#3b4a3d",
+                        "surface-container-high": "#222a3d",
+                        "tertiary-fixed": "#ffdcbf",
+                        "on-primary-fixed": "#00210b",
+                        "inverse-on-surface": "#283044",
+                        "surface-container-low": "#131b2e",
+                        "on-primary": "#003918",
+                        "on-surface-variant": "#bacbb9",
+                        "secondary": "#bec6e0",
+                        "outline": "#859585",
+                        "surface-container": "#171f33",
+                        "on-primary-fixed-variant": "#005226",
+                        "primary-fixed": "#62ff96",
+                        "surface": "#0b1326",
+                        "on-tertiary-fixed": "#2d1600",
+                        "on-tertiary-fixed-variant": "#6a3c03",
+                        "on-surface": "#dae2fd",
+                        "tertiary": "#ffdec4",
+                        "on-secondary-fixed": "#131b2e",
+                        "surface-container-lowest": "#060e20",
+                        "surface-bright": "#31394d",
+                        "on-background": "#dae2fd",
+                        "surface-dim": "#0b1326",
+                        "on-tertiary-container": "#794810",
+                        "tertiary-fixed-dim": "#fdb878",
+                        "inverse-primary": "#006d35",
+                        "surface-variant": "#2d3449",
+                        "on-secondary-container": "#adb4ce",
+                        "on-tertiary": "#4b2800",
+                        "background": "#0b1326",
+                        "primary": "#75ff9e",
+                        "error-container": "#93000a",
+                        "on-error-container": "#ffdad6"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+        }
+        .primary-gradient {
+            background: linear-gradient(135deg, #75ff9e 0%, #00e676 100%);
+        }
+        .ghost-border {
+            outline: 1px solid rgba(59, 74, 61, 0.2);
+        }
+        .data-grid-pattern {
+            background-image: radial-gradient(rgba(117, 255, 158, 0.05) 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#0b1326]/70 backdrop-blur-xl flex justify-between items-center px-10 py-6 max-w-full">
+    <div class="text-xl font-bold tracking-tighter text-[#dae2fd] font-headline uppercase">
+        alun_indraswari
+    </div>
+    <div class="hidden md:flex gap-10">
+        
+        <a class="font-headline text-sm tracking-tight text-[#00e676] border-b-2 border-[#00e676] pb-1 transition-all duration-300" href="home.html">home</a>
+
+        <a class="font-headline text-sm tracking-tight text-[#dae2fd] hover:text-[#00e676] transition-colors duration-300" href="projects.html">projects</a>
+        <a class="font-headline text-sm tracking-tight text-[#dae2fd] hover:text-[#00e676] transition-colors duration-300" href="blog.html">blog</a>
+        <a class="font-headline text-sm tracking-tight text-[#dae2fd] hover:text-[#00e676] transition-colors duration-300" href="contact.html">contact</a>
+</nav>
+<!-- Hero Section -->
+<section class="relative flex items-center px-10 py-12 md:py-16 data-grid-pattern">
+    <div class="max-w-5xl">
+        <p class="font-label text-[0.6875rem] tracking-[0.1rem] uppercase text-primary mb-4">status: learning</p>
+        <h1 class="font-headline text-[3.5rem] md:text-[5rem] font-bold leading-[1.1] tracking-[-0.02em] mb-6">
+            architecting insights<br/>
+            <span class="text-primary italic">from data.</span>
+        </h1>
+        <p class="font-body text-lg text-secondary max-w-2xl mb-8 leading-relaxed">
+            Data Scientist specializing in end-to-end analytical pipelines. From natural language processing to time series forecasting and data mining such as computer vision models. I bridge the gap between raw data integrity and actionable intelligence.
+        </p>
+        <div class="flex flex-wrap gap-6">
+            <a href="projects.html" class="inline-flex items-center justify-center primary-gradient text-on-primary font-headline text-base font-bold px-10 py-4 active:scale-95 transition-all">
+                VIEW_PROJECTS
+            </a>
+            
+            <a href="LINK_GOOGLE_DRIVE_KAMU_DISINI" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center ghost-border text-primary font-headline text-base font-bold px-10 py-4 hover:bg-surface-container-high transition-all">
+                DOWNLOAD_RESUME
+            </a>
+        </div>
+    </div>
+    <div class="absolute right-10 bottom-16 hidden lg:block w-64 h-64 border-l-4 border-b-4 border-outline-variant opacity-20"></div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t-0 flex flex-col md:flex-row justify-between items-center px-10 py-12 gap-8 w-full mt-auto">
+    <div class="text-lg font-black text-secondary-fixed font-headline uppercase">
+        alun_indraswari
+    </div>
+    
+    <div class="flex gap-8">
+        <a class="font-label text-[0.6875rem] tracking-[0.1rem] uppercase text-secondary-fixed/60 hover:text-primary transition-colors" href="https://linkedin.com/in/username-kamu" target="_blank">linkedin</a>
+        
+        <a class="font-label text-[0.6875rem] tracking-[0.1rem] uppercase text-secondary-fixed/60 hover:text-primary transition-colors" href="https://github.com/username-kamu" target="_blank">github</a>
+        
+        <a class="font-label text-[0.6875rem] tracking-[0.1rem] uppercase text-secondary-fixed/60 hover:text-primary transition-colors" href="https://kaggle.com/username-kamu" target="_blank">kaggle</a>
+
+        <a class="font-label text-[0.6875rem] tracking-[0.1rem] uppercase text-secondary-fixed/60 hover:text-primary transition-colors" href="https://medium.com/@username-kamu" target="_blank">medium</a>
+    </div>
+    
+    <div class="font-label text-[0.6875rem] tracking-[0.1rem] uppercase text-secondary-fixed/40 text-center">
+        © 2026 ALUN INDRASWARI. 
+    </div>
+</footer>
+</body></html>

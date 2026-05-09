@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title> alun indraswari | Blog</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "tertiary-container": "#ffba79",
+                "on-error-container": "#ffdad6",
+                "on-error": "#690005",
+                "surface": "#0b1326",
+                "outline-variant": "#3b4a3d",
+                "inverse-primary": "#006d35",
+                "surface-container-lowest": "#060e20",
+                "primary-container": "#00e676",
+                "inverse-on-surface": "#283044",
+                "secondary-fixed": "#dae2fd",
+                "error": "#ffb4ab",
+                "primary": "#75ff9e",
+                "secondary": "#bec6e0",
+                "on-primary-fixed-variant": "#005226",
+                "on-tertiary-fixed": "#2d1600",
+                "on-secondary-container": "#adb4ce",
+                "tertiary-fixed": "#ffdcbf",
+                "on-primary": "#003918",
+                "secondary-fixed-dim": "#bec6e0",
+                "on-secondary-fixed-variant": "#3f465c",
+                "surface-tint": "#00e475",
+                "on-primary-fixed": "#00210b",
+                "surface-container": "#171f33",
+                "on-secondary-fixed": "#131b2e",
+                "surface-container-high": "#222a3d",
+                "outline": "#859585",
+                "on-primary-container": "#00612e",
+                "on-tertiary": "#4b2800",
+                "on-tertiary-fixed-variant": "#6a3c03",
+                "on-background": "#dae2fd",
+                "surface-bright": "#31394d",
+                "secondary-container": "#3f465c",
+                "on-surface": "#dae2fd",
+                "inverse-surface": "#dae2fd",
+                "surface-variant": "#2d3449",
+                "on-tertiary-container": "#794810",
+                "background": "#0b1326",
+                "tertiary-fixed-dim": "#fdb878",
+                "surface-container-highest": "#2d3449",
+                "on-surface-variant": "#bacbb9",
+                "error-container": "#93000a",
+                "surface-dim": "#0b1326",
+                "primary-fixed": "#62ff96",
+                "surface-container-low": "#131b2e",
+                "on-secondary": "#283044",
+                "primary-fixed-dim": "#00e475",
+                "tertiary": "#ffdec4"
+              },
+              fontFamily: {
+                "headline": ["Space Grotesk"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0b1326;
+            color: #dae2fd;
+        }
+        .glass-nav {
+            background: rgba(11, 19, 38, 0.7);
+            backdrop-filter: blur(12px);
+        }
+        .ghost-border {
+            outline: 1px solid rgba(59, 74, 61, 0.2);
+        }
+        .primary-gradient {
+            background: linear-gradient(135deg, #75ff9e 0%, #00e676 100%);
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#0b1326]/70 backdrop-blur-xl flex justify-between items-center px-10 py-6 max-w-full">
+    <div class="text-xl font-bold tracking-tighter text-[#dae2fd] font-headline uppercase">
+        alun_indraswari
+    </div>
+    <div class="hidden md:flex gap-10">
+        
+        <a class="font-headline text-sm tracking-tight text-[#dae2fd] hover:text-[#00e676] transition-colors duration-300" href="index.html">home</a>
+
+        <a class="font-headline text-sm tracking-tight text-[#dae2fd] hover:text-[#00e676] transition-colors duration-300" href="projects.html">projects</a>
+        <a class="font-headline text-sm tracking-tight text-[#00e676] border-b-2 border-[#00e676] pb-1 transition-all duration-300" href="blog.html">blog</a>
+        <a class="font-headline text-sm tracking-tight text-[#dae2fd] hover:text-[#00e676] transition-colors duration-300" href="contact.html">contact</a>
+</nav>
+
+
+<main class="pt-32 pb-24 px-10 max-w-7xl mx-auto min-h-screen">
+    
+    <header class="mb-20">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-2">
+                
+                <div class="flex flex-col md:flex-row md:items-end gap-2 md:gap-4">
+                    <h1 class="text-5xl md:text-7xl font-bold tracking-tighter leading-none lowercase text-on-surface mb-0">
+                        blog.
+                    </h1>
+                </div>
+                    <div class="flex justify-end mb-16 w-full">
+                        <div class="w-full md:w-80 relative group">
+                            <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant group-focus-within:text-primary transition-colors">search</span>
+                            <input type="text" id="searchInput" placeholder="Search articles..." class="w-full bg-surface-container-low border border-outline-variant/30 text-on-surface pl-12 pr-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all font-body">
+                        </div>
+                    </div>
+            </div>
+
+            <div class="h-[1px] w-full bg-outline-variant/30 mt-10"></div>
+        </div>
+    </header>
+
+
+
+    <div id="blog-grid" class="flex flex-col gap-8">
+        </div>
+
+    <div id="no-result" class="hidden text-center py-20">
+        <span class="material-symbols-outlined text-6xl text-on-surface-variant/30 mb-4">article</span>
+        <h3 class="text-xl font-bold text-on-surface-variant">Artikel tidak ditemukan</h3>
+        <p class="text-on-surface-variant/70 text-sm mt-2">Coba gunakan kata kunci lain.</p>
+    </div>
+
+</main>
+
+
+
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t-0 flex flex-col md:flex-row justify-between items-center px-10 py-12 gap-8 w-full mt-auto">
+    <div class="text-lg font-black text-secondary-fixed font-headline uppercase">
+        alun_indraswari
+    </div>
+    
+    <div class="flex gap-8">
+        <a class="font-label text-[0.6875rem] tracking-[0.1rem] uppercase text-secondary-fixed/60 hover:text-primary transition-colors" href="https://linkedin.com/in/username-kamu" target="_blank">linkedin</a>
+        
+        <a class="font-label text-[0.6875rem] tracking-[0.1rem] uppercase text-secondary-fixed/60 hover:text-primary transition-colors" href="https://github.com/username-kamu" target="_blank">github</a>
+        
+        <a class="font-label text-[0.6875rem] tracking-[0.1rem] uppercase text-secondary-fixed/60 hover:text-primary transition-colors" href="https://kaggle.com/username-kamu" target="_blank">kaggle</a>
+
+        <a class="font-label text-[0.6875rem] tracking-[0.1rem] uppercase text-secondary-fixed/60 hover:text-primary transition-colors" href="https://medium.com/@username-kamu" target="_blank">medium</a>
+
+    </div>
+    
+    <div class="font-label text-[0.6875rem] tracking-[0.1rem] uppercase text-secondary-fixed/40 text-center">
+        © 2026 ALUN INDRASWARI.
+    </div>
+</footer>
+
+<!-- Decorative SVG Element -->
+<div class="fixed bottom-0 right-0 pointer-events-none opacity-5 mix-blend-overlay">
+<svg fill="none" height="400" viewbox="0 0 400 400" width="400" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 400L400 0H0V400Z" fill="#00E676"></path>
+<path d="M400 400L0 0V400H400Z" fill="#00E676"></path>
+</svg>
+</div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const rssUrl = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@alunindraswari";
+        const grid = document.getElementById('blog-grid'); // Sudah diperbaiki
+        const searchInput = document.getElementById('searchInput');
+        const noResult = document.getElementById('no-result');
+        let allPosts = [];
+
+        fetch(rssUrl)
+            .then(res => res.json())
+            .then(data => {
+                if (data.status === 'ok') {
+                    allPosts = data.items;
+                    renderMediumPosts(allPosts);
+                } else {
+                    grid.innerHTML = "<p class='text-on-surface'>Gagal mengambil data dari Medium.</p>";
+                }
+            })
+            .catch(err => {
+                console.error("Error:", err);
+                grid.innerHTML = "<p class='text-on-surface text-center py-10'>Terjadi kesalahan koneksi.</p>";
+            });
+
+        function renderMediumPosts(posts) {
+            grid.innerHTML = '';
+            
+            if (posts.length === 0) {
+                noResult.classList.remove('hidden');
+                return;
+            }
+            
+            noResult.classList.add('hidden');
+
+            posts.forEach(post => {
+                const content = post.content || post.description;
+                const imgMatch = content.match(/<img[^>]+src="([^">]+)"/);
+                const thumbnail = post.thumbnail || (imgMatch ? imgMatch[1] : 'https://via.placeholder.com/600x400?text=Medium+Article');
+                const cleanSummary = content.replace(/<[^>]*>?/gm, '').substring(0, 150) + '...';
+                const date = new Date(post.pubDate).toLocaleDateString('id-ID', {
+                    year: 'numeric', month: 'long', day: 'numeric'
+                });
+
+                const card = `
+                    <a href="${post.link}" target="_blank" class="group flex flex-col md:flex-row gap-8 p-6 rounded-3xl border border-outline-variant/30 hover:border-primary/50 bg-surface-container-low transition-all mb-6">
+                        <div class="md:w-1/3 aspect-video overflow-hidden rounded-2xl">
+                            <img src="${thumbnail}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Thumbnail">
+                        </div>
+                        <div class="md:w-2/3 flex flex-col justify-center">
+                            <span class="text-primary font-label text-[0.6875rem] tracking-[0.1rem] uppercase mb-2 block">
+                                Medium • ${date}
+                            </span>
+                            <h3 class="text-2xl font-bold mb-3 text-on-surface group-hover:text-primary transition-colors">
+                                ${post.title}
+                            </h3>
+                            <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                                ${cleanSummary}
+                            </p>
+                            <div class="flex items-center gap-2 text-primary font-bold text-sm tracking-wider uppercase">
+                                <span>Read_on_Medium</span>
+                                <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+                            </div>
+                        </div>
+                    </a>
+                `;
+                grid.innerHTML += card;
+            });
+        }
+
+        // Logika Pencarian
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const filteredPosts = allPosts.filter(post => 
+                post.title.toLowerCase().includes(searchTerm) || 
+                post.description.toLowerCase().includes(searchTerm)
+            );
+            renderMediumPosts(filteredPosts);
+        });
+    });
+</script>
+
+</body></html>

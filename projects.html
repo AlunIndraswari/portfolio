@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title> alun indraswari | Projects</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "secondary-fixed": "#dae2fd",
+                        "surface-container-highest": "#2d3449",
+                        "inverse-surface": "#dae2fd",
+                        "surface-tint": "#00e475",
+                        "tertiary-container": "#ffba79",
+                        "secondary-fixed-dim": "#bec6e0",
+                        "on-error": "#690005",
+                        "primary-container": "#00e676",
+                        "on-secondary": "#283044",
+                        "secondary-container": "#3f465c",
+                        "on-secondary-fixed-variant": "#3f465c",
+                        "primary-fixed-dim": "#00e475",
+                        "on-primary-container": "#00612e",
+                        "error": "#ffb4ab",
+                        "outline-variant": "#3b4a3d",
+                        "surface-container-high": "#222a3d",
+                        "tertiary-fixed": "#ffdcbf",
+                        "on-primary-fixed": "#00210b",
+                        "inverse-on-surface": "#283044",
+                        "surface-container-low": "#131b2e",
+                        "on-primary": "#003918",
+                        "on-surface-variant": "#bacbb9",
+                        "secondary": "#bec6e0",
+                        "outline": "#859585",
+                        "surface-container": "#171f33",
+                        "on-primary-fixed-variant": "#005226",
+                        "primary-fixed": "#62ff96",
+                        "surface": "#0b1326",
+                        "on-tertiary-fixed": "#2d1600",
+                        "on-tertiary-fixed-variant": "#6a3c03",
+                        "on-surface": "#dae2fd",
+                        "tertiary": "#ffdec4",
+                        "on-secondary-fixed": "#131b2e",
+                        "surface-container-lowest": "#060e20",
+                        "surface-bright": "#31394d",
+                        "on-background": "#dae2fd",
+                        "surface-dim": "#0b1326",
+                        "on-tertiary-container": "#794810",
+                        "tertiary-fixed-dim": "#fdb878",
+                        "inverse-primary": "#006d35",
+                        "surface-variant": "#2d3449",
+                        "on-secondary-container": "#adb4ce",
+                        "on-tertiary": "#4b2800",
+                        "background": "#0b1326",
+                        "primary": "#75ff9e",
+                        "error-container": "#93000a",
+                        "on-error-container": "#ffdad6"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-header {
+            background: rgba(11, 19, 38, 0.7);
+            backdrop-filter: blur(12px);
+        }
+        .primary-gradient {
+            background: linear-gradient(135deg, #75ff9e 0%, #00e676 100%);
+        }
+        .ghost-border {
+            outline: 1px solid rgba(59, 74, 61, 0.2);
+        }
+        .project-card {
+            transition: opacity 0.25s ease, transform 0.25s ease;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0b1326;
+            color: #dae2fd;
+        }
+        h1, h2, h3, .font-headline {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#0b1326]/70 backdrop-blur-xl flex justify-between items-center px-10 py-6 max-w-full">
+    <div class="text-xl font-bold tracking-tighter text-[#dae2fd] font-headline uppercase">
+        alun_indraswari
+    </div>
+    <div class="hidden md:flex gap-10">
+        
+        <a class="font-headline text-sm tracking-tight text-[#dae2fd] hover:text-[#00e676] transition-colors duration-300" href="index.html">home</a>
+
+        <a class="font-headline text-sm tracking-tight text-[#00e676] border-b-2 border-[#00e676] pb-1 transition-all duration-300" href="projects.html">projects</a>
+        <a class="font-headline text-sm tracking-tight text-[#dae2fd] hover:text-[#00e676] transition-colors duration-300" href="blog.html">blog</a>
+        <a class="font-headline text-sm tracking-tight text-[#dae2fd] hover:text-[#00e676] transition-colors duration-300" href="contact.html">contact</a>
+    </div>
+</nav>
+<main class="pt-32 pb-24 px-10 max-w-7xl mx-auto">
+<!-- Hero Section & Filters -->
+<header class="mb-20">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+        
+        <div class="max-w-2xl">
+            <span class="text-primary font-label text-[0.6875rem] tracking-[0.1rem] uppercase mb-4 block">Archive</span>
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tighter leading-none lowercase mb-6">selected_projects</h1>
+            <p class="text-on-surface-variant text-lg max-w-lg leading-relaxed">
+                A repository of computational architecture and predictive modeling. Bridging the gap between raw data integrity and commercial viability.
+            </p>
+        </div>
+        
+        <div class="flex flex-wrap gap-3 mb-10" id="filter-buttons">
+            <button type="button" data-category="All" class="filter-btn px-6 py-2 text-xs font-bold uppercase tracking-widest border border-primary bg-primary text-on-primary transition-all">
+                All_Projects
+            </button>
+            <button type="button" data-category="Computer Vision" class="filter-btn px-6 py-2 text-xs font-bold uppercase tracking-widest border border-outline-variant/50 text-on-surface-variant hover:border-primary hover:text-primary transition-all">
+                Computer_Vision
+            </button>
+            <button type="button" data-category="Data Analysis" class="filter-btn px-6 py-2 text-xs font-bold uppercase tracking-widest border border-outline-variant/50 text-on-surface-variant hover:border-primary hover:text-primary transition-all">
+                Data_Analysis
+            </button>
+            <button type="button" data-category="Enterprise Application Integration" class="filter-btn px-6 py-2 text-xs font-bold uppercase tracking-widest border border-outline-variant/50 text-on-surface-variant hover:border-primary hover:text-primary transition-all">
+                B2B_Integration
+            </button>
+            <button type="button" data-category="Data Warehouse & Business Intelligence" class="filter-btn px-6 py-2 text-xs font-bold uppercase tracking-widest border border-outline-variant/50 text-on-surface-variant hover:border-primary hover:text-primary transition-all">
+                Data_Warehouse
+            </button>
+            <button type="button" data-category="Cybersecurity & NLP" class="filter-btn px-6 py-2 text-xs font-bold uppercase tracking-widest border border-outline-variant/50 text-on-surface-variant hover:border-primary hover:text-primary transition-all">
+                Cybersecurity
+            </button>
+        </div>
+        
+    </div> 
+</header>
+
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+<!-- Project 001 (grid large)-->
+<div class="md:col-span-12 project-card group relative bg-surface-container overflow-hidden cursor-pointer hover:ring-2 hover:ring-primary transition-all duration-300 flex flex-col h-full"
+     onclick="openModal(this)"
+     data-title="DETECTIFY AI"
+     data-category="Computer Vision"
+     data-tags="Computer Vision, ResNet50, Image Classification"
+     data-full-desc="Membangun model klasifikasi Deep Learning menggunakan arsitektur ResNet50 untuk mendeteksi gambar buatan AI. <br>
+                    <br> <b>Masalah:</b> Meningkatnya penyebaran gambar AI yang sulit dibedakan oleh mata manusia.
+                    <br><b>Solusi:</b> Model dilatih dengan ribuan dataset citra asli dan sintetis, menghasilkan metrik evaluasi yang solid untuk memverifikasi keaslian media digital."
+     data-link="https://github.com/xxxxxxx">
+     
+    <div class="h-48 md:h-56 w-full overflow-hidden bg-surface-container-lowest shrink-0 relative">
+        <img src="assets/img/detectify-cover.png" 
+             alt="Detectify AI Cover" 
+             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+    </div>
+    
+    <div class="p-6 md:p-8 relative flex flex-col flex-1">
+        <div class="flex justify-between items-start mb-4">
+            <div class="overflow-hidden pr-4">
+                <div class="text-primary font-label text-[0.6rem] tracking-[0.1rem] uppercase mb-1">
+                    Computer Vision
+                </div>
+                
+                <h3 class="text-xl md:text-2xl font-bold tracking-tight mb-3 truncate">DETECTIFY_AI</h3>
+                
+                <div class="flex gap-2 overflow-hidden">
+                    <span class="bg-secondary-container text-on-secondary-container px-3 py-1 text-[0.6rem] font-bold tracking-widest uppercase border-l-2 border-primary whitespace-nowrap">ResNet50</span>
+                    <span class="bg-secondary-container text-on-secondary-container px-3 py-1 text-[0.6rem] font-bold tracking-widest uppercase border-l-2 border-primary whitespace-nowrap hidden sm:inline-block">Classification</span>
+                </div>
+            </div>
+            <span class="material-symbols-outlined text-primary text-3xl shrink-0">open_in_new</span>
+        </div>
+        
+        <p class="text-on-surface-variant text-sm mb-6 line-clamp-2">
+            Model klasifikasi Deep Learning untuk mendeteksi gambar buatan AI.
+        </p>
+        
+        <div class="grid grid-cols-2 gap-6 mt-auto">
+            <div>
+                <div class="text-primary font-label text-[0.6rem] tracking-[0.1rem] uppercase mb-1">AUC_Score</div>
+                <div class="text-xl font-bold text-on-surface">85.9%</div>
+                <div class="w-full h-1 bg-surface-container-low mt-2"><div class="bg-primary h-full w-[85%]"></div></div>
+            </div>
+            <div>
+                <div class="text-primary font-label text-[0.6rem] tracking-[0.1rem] uppercase mb-1">Accuracy</div>
+                <div class="text-xl font-bold text-on-surface">78.2%</div>
+                <div class="w-full h-1 bg-surface-container-low mt-2"><div class="bg-primary h-full w-[78%]"></div></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Project 003: Side Tall -->
+<div class="md:col-span-4 project-card group relative bg-surface-container overflow-hidden cursor-pointer hover:ring-2 hover:ring-primary transition-all duration-300 flex flex-col h-full"
+     onclick="openModal(this)"
+     data-title="Social Media Addiction Clustering"
+     data-category="Data Analysis"
+     data-tags="Python, Clustering, EDA, K-Means"
+     data-full-desc="Menganalisis hubungan kompleks antara kebiasaan digital dan performa manusia menggunakan teknik Clustering. <br><br><b>Masalah:</b> Sulitnya memetakan pola interaksi antara konsumsi media sosial, frekuensi notifikasi, dan jam tidur terhadap produktivitas seseorang hanya dengan label sederhana.<br><b>Solusi:</b> Membangun profil perilaku multi-dimensi menggunakan algoritma clustering untuk menemukan kelompok pengguna spesifik dan memberikan wawasan berbasis data mengenai mekanisme produktivitas."
+     data-link="https://www.kaggle.com/code/alunyi/clustering-persona-approach-to-socmed-addiction">
+     
+    <div class="h-48 md:h-56 w-full bg-surface-container-lowest flex items-center justify-center relative shrink-0">
+        <span class="material-symbols-outlined text-primary/20 text-7xl md:text-8xl group-hover:scale-110 group-hover:text-primary transition-all duration-500">scatter_plot</span>
+    </div>
+    
+    <div class="p-6 relative flex flex-col flex-1">
+        <div class="flex justify-between items-start mb-4">
+            <div class="overflow-hidden pr-2">
+                <div class="text-primary font-label text-[0.6rem] tracking-[0.1rem] uppercase mb-1 truncate">
+                    Data Clustering
+                </div>
+                
+                <h3 class="text-xl font-bold tracking-tight mb-3 truncate">DIGITAL_HABITS</h3>
+                
+                <div class="flex gap-2 overflow-hidden">
+                    <span class="bg-secondary-container text-on-secondary-container px-3 py-1 text-[0.6rem] font-bold tracking-widest uppercase border-l-2 border-primary whitespace-nowrap">Clustering</span>
+                    <span class="bg-secondary-container text-on-secondary-container px-3 py-1 text-[0.6rem] font-bold tracking-widest uppercase border-l-2 border-primary whitespace-nowrap hidden lg:inline-block">EDA</span>
+                </div>
+            </div>
+            <span class="material-symbols-outlined text-primary text-2xl shrink-0">open_in_new</span>
+        </div>
+        
+        <p class="text-on-surface-variant text-sm mb-6 line-clamp-3">
+            Analisis clustering untuk memetakan profil perilaku digital dan dampaknya terhadap produktivitas.
+        </p>
+        
+        <div class="grid grid-cols-2 gap-4 mt-auto">
+            <div>
+                <div class="text-primary font-label text-[0.55rem] tracking-[0.1rem] uppercase mb-1">Profiles</div>
+                <div class="text-lg font-bold text-on-surface">4</div>
+                <div class="w-full h-1 bg-surface-container-low mt-2"><div class="bg-primary h-full w-[100%]"></div></div>
+            </div>
+            <div>
+                <div class="text-primary font-label text-[0.55rem] tracking-[0.1rem] uppercase mb-1">Data_Points</div>
+                <div class="text-lg font-bold text-on-surface">5k+</div>
+                <div class="w-full h-1 bg-surface-container-low mt-2"><div class="bg-primary h-full w-[100%]"></div></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Project 004: Large Grid -->
+<div class="md:col-span-8 project-card group relative bg-surface-container overflow-hidden cursor-pointer hover:ring-2 hover:ring-primary transition-all duration-300 flex flex-col h-full"
+     onclick="openModal(this)"
+     data-title="SISUPLY"
+     data-category="Enterprise Application Integration"
+     data-tags="Flask, REST API, Firebase, EAI, B2B Integration, Back-End Website"
+     data-full-desc="Sistem integrasi backend berbasis API untuk menyelaraskan alur kerja B2B antara Supplier, Distributor, dan Retailer secara real-time.<br><br><b>Masalah:</b> Fragmentasi data antar organisasi yang menghambat efisiensi pengecekan logistik dan sinkronisasi stok secara lintas platform.<br><b>Solusi:</b> Mengimplementasikan pola EAI menggunakan Flask REST API dan Firebase Firestore untuk menjembatani pertukaran data transaksi, kalkulasi biaya pengiriman antar-distributor, dan otomatisasi update inventaris di seluruh ekosistem korporasi."
+     data-link="https://github.com/Waizsec/SiSuply/tree/main">
+     
+    <div class="h-32 md:h-40 w-full bg-surface-container-lowest flex items-center justify-center relative shrink-0">
+        <span class="material-symbols-outlined text-primary/20 text-7xl md:text-8xl group-hover:scale-110 group-hover:text-primary transition-all duration-500">hub</span>
+    </div>
+    
+    <div class="p-6 md:p-8 relative flex flex-col flex-1">
+        <div class="flex justify-between items-start mb-4">
+            <div>
+                <div class="text-primary font-label text-[0.6rem] tracking-[0.1rem] uppercase mb-1">
+                    EAI (Enterprise Integration)
+                </div>
+                
+                <h3 class="text-xl md:text-2xl font-bold tracking-tight mb-3">SISUPLY B2B_INTEGRATION</h3>
+                
+                <div class="flex flex-wrap gap-2 overflow-hidden">
+                    <span class="bg-secondary-container text-on-secondary-container px-3 py-1 text-[0.6rem] font-bold tracking-widest uppercase border-l-2 border-primary whitespace-nowrap">Flask API</span>
+                    <span class="bg-secondary-container text-on-secondary-container px-3 py-1 text-[0.6rem] font-bold tracking-widest uppercase border-l-2 border-primary whitespace-nowrap hidden sm:inline-block">Firestore</span>
+                </div>
+            </div>
+            <span class="material-symbols-outlined text-primary text-3xl shrink-0">open_in_new</span>
+        </div>
+        
+        <p class="text-on-surface-variant text-sm mb-6 max-w-2xl line-clamp-2 font-body">
+            Sistem integrasi backend untuk menyelaraskan alur kerja B2B logistik secara real-time.
+        </p>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-auto">
+            <div>
+                <div class="text-primary font-label text-[0.6rem] tracking-[0.1rem] uppercase mb-1">API_Endpoints</div>
+                <div class="text-xl md:text-2xl font-bold text-on-surface">15+</div>
+                <div class="text-on-surface-variant text-[0.6rem]">Endpoints Developed</div>
+            </div>
+            <div>
+                <div class="text-primary font-label text-[0.6rem] tracking-[0.1rem] uppercase mb-1">Response_Time</div>
+                <div class="text-xl md:text-2xl font-bold text-on-surface">&lt;200ms</div>
+                <div class="text-on-surface-variant text-[0.6rem]">Avg. Firebase Latency</div>
+            </div>
+            <div>
+                <div class="text-primary font-label text-[0.6rem] tracking-[0.1rem] uppercase mb-1">Integration</div>
+                <div class="text-xl md:text-2xl font-bold text-on-surface">3 Party</div>
+                <div class="text-on-surface-variant text-[0.6rem]">Supplier, Distributor, Retailer</div>
+            </div>
+            <div>
+                <div class="text-primary font-label text-[0.6rem] tracking-[0.1rem] uppercase mb-1">Data_Processing</div>
+                <div class="text-xl md:text-2xl font-bold text-on-surface">Batch</div>
+                <div class="text-on-surface-variant text-[0.6rem]">Inventory Sync</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Project 005: Large Grid -->
+<div class="md:col-span-8 project-card group relative bg-surface-container overflow-hidden cursor-pointer hover:ring-2 hover:ring-primary transition-all duration-300 flex flex-col h-full"
+     onclick="openModal(this)"
+     data-title="DW-SUPPLY F&B"
+     data-category="Data Warehouse & Business Intelligence"
+     data-tags="Laravel, Data Warehouse, ETL, OLAP, Star Schema, Supply Chain Analysis, Business Intelligence"
+     data-full-desc="Sistem Data Warehouse terintegrasi untuk mengoptimalkan manajemen rantai pasok di industri Food and Beverage (F&B) wilayah Jawa.<br><br><b>Masalah:</b> Volume data transaksi pengiriman yang besar dan tersebar menghambat efisiensi pemantauan distribusi ke berbagai stokis serta menyulitkan pengambilan keputusan strategis berbasis tren.<br><b>Solusi:</b> Membangun Data Warehouse dengan pendekatan Bottom-Up dan skema Star Schema untuk mengintegrasikan data dari berbagai sumber melalui proses ETL (Extract, Transform, Load). Sistem ini dilengkapi dashboard analitik berbasis Laravel yang menggunakan teknologi OLAP untuk memantau kinerja vendor, tren pengiriman bulanan, dan evaluasi kebutuhan stok cabang secara real-time."
+     data-link="https://github.com/putuangga-k/Database-Final-Project">
+     
+    <div class="h-48 md:h-56 w-full bg-surface-container-lowest flex items-center justify-center relative shrink-0">
+        <span class="material-symbols-outlined text-primary/20 text-7xl md:text-8xl group-hover:scale-110 group-hover:text-primary transition-all duration-500">analytics</span>
+    </div>
+    
+    <div class="p-6 md:p-8 relative flex flex-col flex-1">
+        <div class="flex justify-between items-start mb-4">
+            <div class="overflow-hidden pr-4">
+                <div class="text-primary font-label text-[0.6rem] tracking-[0.1rem] uppercase mb-1">
+                    Data Warehouse & BI
+                </div>
+                
+                <h3 class="text-xl md:text-2xl font-bold tracking-tight mb-3 truncate">DW-SUPPLY F&B</h3>
+                
+                <div class="flex flex-wrap gap-2 overflow-hidden">
+                    <span class="bg-secondary-container text-on-secondary-container px-3 py-1 text-[0.6rem] font-bold tracking-widest uppercase border-l-2 border-primary whitespace-nowrap">ETL</span>
+                    <span class="bg-secondary-container text-on-secondary-container px-3 py-1 text-[0.6rem] font-bold tracking-widest uppercase border-l-2 border-primary whitespace-nowrap hidden sm:inline-block">Star Schema</span>
+                    <span class="bg-secondary-container text-on-secondary-container px-3 py-1 text-[0.6rem] font-bold tracking-widest uppercase border-l-2 border-primary whitespace-nowrap hidden md:inline-block">OLAP</span>
+                </div>
+            </div>
+            <span class="material-symbols-outlined text-primary text-3xl shrink-0">open_in_new</span>
+        </div>
+        
+        <p class="text-on-surface-variant text-sm mb-6 line-clamp-2">
+            Data Warehouse & Dashboard OLAP untuk optimasi rantai pasok industri F&B.
+        </p>
+        
+        <div class="grid grid-cols-2 gap-6 mt-auto">
+            <div>
+                <div class="text-primary font-label text-[0.6rem] tracking-[0.1rem] uppercase mb-1">Architecture</div>
+                <div class="text-xl md:text-2xl font-bold text-on-surface">Star_Schema</div>
+                <div class="w-full h-1 bg-surface-container-low mt-2"><div class="bg-primary h-full w-[100%]"></div></div>
+            </div>
+            <div>
+                <div class="text-primary font-label text-[0.6rem] tracking-[0.1rem] uppercase mb-1">Data_Processing</div>
+                <div class="text-xl md:text-2xl font-bold text-on-surface">ETL / OLAP</div>
+                <div class="w-full h-1 bg-surface-container-low mt-2"><div class="bg-primary h-full w-[100%]"></div></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Project 006: Tall Grid -->
+<div class="md:col-span-4 project-card group relative bg-surface-container overflow-hidden cursor-pointer hover:ring-2 hover:ring-primary transition-all duration-300 flex flex-col h-full"
+     onclick="openModal(this)"
+     data-title="MASKIFY"
+     data-category="Cybersecurity & NLP"
+     data-tags="Python, Flask, Regex, Data Privacy, Web App"
+     data-full-desc="Aplikasi web cerdas untuk menyensor data pribadi (PII) dan filter konten kasar secara otomatis menggunakan Regular Expressions. <br><br> <b>Masalah:</b> Risiko kebocoran data pribadi (NIK, Email) dan penyebaran konten tidak pantas dalam komunikasi digital.<br><b>Solusi:</b> Membangun mesin pemrosesan teks berbasis Flask yang mampu mengidentifikasi dan menyembunyikan informasi sensitif secara real-time tanpa menyimpan data pengguna, menjamin privasi tetap terjaga (Zero-Retention Policy)."
+     data-link="https://github.com/username/maskify">
+     
+    <div class="h-48 md:h-56 w-full bg-surface-container-lowest flex items-center justify-center relative shrink-0">
+        <span class="material-symbols-outlined text-primary/20 text-7xl md:text-8xl group-hover:scale-110 group-hover:text-primary transition-all duration-500">enhanced_encryption</span>
+    </div>
+    
+    <div class="p-6 relative flex flex-col flex-1">
+        <div class="flex justify-between items-start mb-4">
+            <div class="overflow-hidden pr-2">
+                <div class="text-primary font-label text-[0.6rem] tracking-[0.1rem] uppercase mb-1 truncate">
+                    Cybersecurity & NLP
+                </div>
+                
+                <h3 class="text-xl font-bold tracking-tight mb-3 truncate">MASKIFY</h3>
+                
+                <div class="flex gap-2 overflow-hidden">
+                    <span class="bg-secondary-container text-on-secondary-container px-3 py-1 text-[0.6rem] font-bold tracking-widest uppercase border-l-2 border-primary whitespace-nowrap">Regex</span>
+                    <span class="bg-secondary-container text-on-secondary-container px-3 py-1 text-[0.6rem] font-bold tracking-widest uppercase border-l-2 border-primary whitespace-nowrap hidden lg:inline-block">Flask</span>
+                </div>
+            </div>
+            <span class="material-symbols-outlined text-primary text-2xl shrink-0">open_in_new</span>
+        </div>
+        
+        <p class="text-on-surface-variant text-sm mb-6 line-clamp-3">
+            Sensor data pribadi (PII) dan filter konten otomatis untuk menjamin privasi.
+        </p>
+        
+        <div class="grid grid-cols-2 gap-4 mt-auto">
+            <div>
+                <div class="text-primary font-label text-[0.55rem] tracking-[0.1rem] uppercase mb-1">Latency</div>
+                <div class="text-lg font-bold text-on-surface">&lt;50ms</div>
+                <div class="w-full h-1 bg-surface-container-low mt-2"><div class="bg-primary h-full w-[95%]"></div></div>
+            </div>
+            <div>
+                <div class="text-primary font-label text-[0.55rem] tracking-[0.1rem] uppercase mb-1">Retention</div>
+                <div class="text-lg font-bold text-on-surface">0%</div>
+                <div class="w-full h-1 bg-surface-container-low mt-2"><div class="bg-primary h-full w-[100%]"></div></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t-0 flex flex-col md:flex-row justify-between items-center px-10 py-12 gap-8 w-full mt-auto">
+    <div class="text-lg font-black text-secondary-fixed font-headline uppercase">
+        alun_indraswari
+    </div>
+    
+    <div class="flex gap-8">
+        <a class="font-label text-[0.6875rem] tracking-[0.1rem] uppercase text-secondary-fixed/60 hover:text-primary transition-colors" href="https://linkedin.com/in/username-kamu" target="_blank">linkedin</a>
+        
+        <a class="font-label text-[0.6875rem] tracking-[0.1rem] uppercase text-secondary-fixed/60 hover:text-primary transition-colors" href="https://github.com/username-kamu" target="_blank">github</a>
+        
+        <a class="font-label text-[0.6875rem] tracking-[0.1rem] uppercase text-secondary-fixed/60 hover:text-primary transition-colors" href="https://kaggle.com/username-kamu" target="_blank">kaggle</a>
+
+        <a class="font-label text-[0.6875rem] tracking-[0.1rem] uppercase text-secondary-fixed/60 hover:text-primary transition-colors" href="https://medium.com/@username-kamu" target="_blank">medium</a>
+    </div>
+    
+    <div class="font-label text-[0.6875rem] tracking-[0.1rem] uppercase text-secondary-fixed/40 text-center">
+        © 2026 ALUN INDRASWARI.
+    </div>
+</footer>
+
+<!-- Project Modal -->
+<div id="project-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 sm:p-6">
+    <div id="modal-backdrop" class="absolute inset-0 bg-[#0b1326]/80 backdrop-blur-md transition-opacity cursor-pointer" onclick="closeModal()"></div>
+    
+    <div class="relative bg-surface-container-highest border border-outline-variant/30 w-full max-w-3xl max-h-[90vh] overflow-y-auto shadow-2xl p-8 md:p-12 transform transition-all rounded-sm">
+        
+        <button onclick="closeModal()" class="absolute top-6 right-6 text-on-surface-variant hover:text-primary transition-colors">
+            <span class="material-symbols-outlined text-3xl">close</span>
+        </button>
+
+        <div class="text-primary font-label text-[0.6875rem] tracking-[0.1rem] uppercase mb-4" id="modal-category">Kategori</div>
+        <div class="flex flex-wrap gap-2 mb-6" id="modal-tags">
+            </div>
+
+        <h2 id="modal-title" class="text-3xl md:text-5xl font-bold tracking-tighter mb-6 uppercase text-on-surface font-headline">Judul Proyek</h2>
+        
+        <div id="modal-desc" class="text-on-surface-variant text-base leading-relaxed mb-10 font-body">
+            </div>
+
+        <div class="pt-8 border-t border-outline-variant/20 flex gap-4">
+            <a href="#" id="modal-link" target="_blank" class="primary-gradient text-on-primary px-8 py-3 text-xs font-bold tracking-widest uppercase transition-all duration-300 hover:opacity-90 font-headline hidden">
+                View_Repository
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+    const projects = [
+        {
+            title: 'DETECTIFY AI',
+            category: 'Computer Vision',
+            tags: ['Computer Vision', 'ResNet50', 'Image Classification'],
+            summary: 'Model klasifikasi Deep Learning untuk mendeteksi gambar buatan AI.',
+            fullDesc: 'Membangun model klasifikasi Deep Learning menggunakan arsitektur ResNet50 untuk mendeteksi gambar buatan AI. <br><br><b>Masalah:</b> Meningkatnya penyebaran gambar AI yang sulit dibedakan oleh mata manusia.<br><b>Solusi:</b> Model dilatih dengan ribuan dataset citra asli dan sintetis, menghasilkan metrik evaluasi yang solid untuk memverifikasi keaslian media digital.',
+            link: 'https://github.com/xxxxxxx',
+            image: 'assets/img/detectify-cover.png',
+            imageAlt: 'Detectify AI Cover',
+            primaryBadge: 'ResNet50',
+            secondaryBadge: 'Classification',
+            stats: [
+                { label: 'AUC Score', value: '85.9%', progress: 85 },
+                { label: 'Accuracy', value: '78.2%', progress: 78 }
+            ],
+            spanClasses: 'md:col-span-12'
+        },
+        {
+            title: 'Social Media Addiction Clustering',
+            category: 'Data Analysis',
+            tags: ['Python', 'Clustering', 'EDA', 'K-Means'],
+            summary: 'Analisis clustering untuk memetakan profil perilaku digital dan dampaknya terhadap produktivitas.',
+            fullDesc: 'Menganalisis hubungan kompleks antara kebiasaan digital dan performa manusia menggunakan teknik Clustering. <br><br><b>Masalah:</b> Sulitnya memetakan pola interaksi antara konsumsi media sosial, frekuensi notifikasi, dan jam tidur terhadap produktivitas seseorang hanya dengan label sederhana.<br><b>Solusi:</b> Membangun profil perilaku multi-dimensi menggunakan algoritma clustering untuk menemukan kelompok pengguna spesifik dan memberikan wawasan berbasis data mengenai mekanisme produktivitas.',
+            link: 'https://www.kaggle.com/code/alunyi/clustering-persona-approach-to-socmed-addiction',
+            icon: 'scatter_plot',
+            primaryBadge: 'Clustering',
+            secondaryBadge: 'EDA',
+            stats: [
+                { label: 'Profiles', value: '4', progress: 100 },
+                { label: 'Data Points', value: '5k+', progress: 100 }
+            ],
+            spanClasses: 'md:col-span-4'
+        },
+        {
+            title: 'SISUPLY',
+            category: 'Enterprise Application Integration',
+            tags: ['Flask', 'REST API', 'Firebase', 'EAI', 'B2B Integration'],
+            summary: 'Sistem integrasi backend untuk menyelaraskan alur kerja B2B logistik secara real-time.',
+            fullDesc: 'Sistem integrasi backend berbasis API untuk menyelaraskan alur kerja B2B antara Supplier, Distributor, dan Retailer secara real-time.<br><br><b>Masalah:</b> Fragmentasi data antar organisasi yang menghambat efisiensi pengecekan logistik dan sinkronisasi stok secara lintas platform.<br><b>Solusi:</b> Mengimplementasikan pola EAI menggunakan Flask REST API dan Firebase Firestore untuk menjembatani pertukaran data transaksi, kalkulasi biaya pengiriman antar-distributor, dan otomatisasi update inventaris di seluruh ekosistem korporasi.',
+            link: 'https://github.com/Waizsec/SiSuply/tree/main',
+            icon: 'hub',
+            primaryBadge: 'Flask API',
+            secondaryBadge: 'Firestore',
+            stats: [
+                { label: 'API Endpoints', value: '15+', progress: 100 },
+                { label: 'Response Time', value: '<200ms', progress: 95 },
+                { label: 'Integration', value: '3 Party', progress: 100 },
+                { label: 'Data Processing', value: 'Batch', progress: 80 }
+            ],
+            spanClasses: 'md:col-span-8'
+        },
+        {
+            title: 'DW-SUPPLY F&B',
+            category: 'Data Warehouse & Business Intelligence',
+            tags: ['Laravel', 'Data Warehouse', 'ETL', 'OLAP', 'Star Schema'],
+            summary: 'Data Warehouse & Dashboard OLAP untuk optimasi rantai pasok industri F&B.',
+            fullDesc: 'Sistem Data Warehouse terintegrasi untuk mengoptimalkan manajemen rantai pasok di industri Food and Beverage (F&B) wilayah Jawa.<br><br><b>Masalah:</b> Volume data transaksi pengiriman yang besar dan tersebar menghambat efisiensi pemantauan distribusi ke berbagai stokis serta menyulitkan pengambilan keputusan strategis berbasis tren.<br><b>Solusi:</b> Membangun Data Warehouse dengan pendekatan Bottom-Up dan skema Star Schema untuk mengintegrasikan data dari berbagai sumber melalui proses ETL (Extract, Transform, Load). Sistem ini dilengkapi dashboard analitik berbasis Laravel yang menggunakan teknologi OLAP untuk memantau kinerja vendor, tren pengiriman bulanan, dan evaluasi kebutuhan stok cabang secara real-time.',
+            link: 'https://github.com/putuangga-k/Database-Final-Project',
+            icon: 'analytics',
+            primaryBadge: 'ETL',
+            secondaryBadge: 'Star Schema',
+            stats: [
+                { label: 'Architecture', value: 'Star Schema', progress: 100 },
+                { label: 'Data Processing', value: 'ETL / OLAP', progress: 100 }
+            ],
+            spanClasses: 'md:col-span-8'
+        },
+        {
+            title: 'MASKIFY',
+            category: 'Cybersecurity & NLP',
+            tags: ['Python', 'Flask', 'Regex', 'Data Privacy'],
+            summary: 'Sensor data pribadi (PII) dan filter konten otomatis untuk menjamin privasi.',
+            fullDesc: 'Aplikasi web cerdas untuk menyensor data pribadi (PII) dan filter konten kasar secara otomatis menggunakan Regular Expressions.<br><br><b>Masalah:</b> Risiko kebocoran data pribadi (NIK, Email) dan penyebaran konten tidak pantas dalam komunikasi digital.<br><b>Solusi:</b> Membangun mesin pemrosesan teks berbasis Flask yang mampu mengidentifikasi dan menyembunyikan informasi sensitif secara real-time tanpa menyimpan data pengguna, menjamin privasi tetap terjaga (Zero-Retention Policy).',
+            link: 'https://github.com/username/maskify',
+            icon: 'enhanced_encryption',
+            primaryBadge: 'Regex',
+            secondaryBadge: 'Flask',
+            stats: [
+                { label: 'Latency', value: '<50ms', progress: 95 },
+                { label: 'Retention', value: '0%', progress: 100 }
+            ],
+            spanClasses: 'md:col-span-4'
+        }
+    ];
+
+    const projectGrid = document.getElementById('project-grid');
+    const filterButtons = document.querySelectorAll('#filter-buttons button');
+    const modal = document.getElementById('project-modal');
+    const modalBackdrop = document.getElementById('modal-backdrop');
+    const modalTitle = document.getElementById('modal-title');
+    const modalCategory = document.getElementById('modal-category');
+    const modalTags = document.getElementById('modal-tags');
+    const modalDesc = document.getElementById('modal-desc');
+    const modalLink = document.getElementById('modal-link');
+
+    function createProjectCard(project) {
+        const tagList = project.tags.map(tag => tag.trim()).filter(Boolean).join(',');
+        const statItems = project.stats.map(stat => `
+            <div>
+                <div class="text-primary font-label text-[0.6rem] tracking-[0.1rem] uppercase mb-1">${stat.label}</div>
+                <div class="text-xl md:text-2xl font-bold text-on-surface">${stat.value}</div>
+                ${stat.progress !== undefined ? `<div class="w-full h-1 bg-surface-container-low mt-2"><div class="bg-primary h-full w-[${stat.progress}%]"></div></div>` : ''}
+            </div>
+        `).join('');
+
+        const media = project.image
+            ? `<div class="h-48 md:h-56 w-full overflow-hidden bg-surface-container-lowest shrink-0 relative">
+                    <img src="${project.image}" alt="${project.imageAlt}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+               </div>`
+            : `<div class="h-48 md:h-56 w-full bg-surface-container-lowest flex items-center justify-center relative shrink-0">
+                    <span class="material-symbols-outlined text-primary/20 text-7xl md:text-8xl group-hover:scale-110 group-hover:text-primary transition-all duration-500">${project.icon}</span>
+               </div>`;
+
+        return `
+            <div class="${project.spanClasses} project-card group relative bg-surface-container overflow-hidden cursor-pointer hover:ring-2 hover:ring-primary transition-all duration-300 flex flex-col h-full" data-title="${project.title}" data-category="${project.category}" data-tags="${tagList}" data-full-desc="${project.fullDesc}" data-link="${project.link}">
+                ${media}
+                <div class="p-6 md:p-8 relative flex flex-col flex-1">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="overflow-hidden pr-4">
+                            <div class="text-primary font-label text-[0.6rem] tracking-[0.1rem] uppercase mb-1">${project.category}</div>
+                            <h3 class="text-xl md:text-2xl font-bold tracking-tight mb-3 truncate">${project.title.replace(/\s+/g, '_')}</h3>
+                            <div class="flex flex-wrap gap-2 overflow-hidden">
+                                <span class="bg-secondary-container text-on-secondary-container px-3 py-1 text-[0.6rem] font-bold tracking-widest uppercase border-l-2 border-primary whitespace-nowrap">${project.primaryBadge}</span>
+                                <span class="bg-secondary-container text-on-secondary-container px-3 py-1 text-[0.6rem] font-bold tracking-widest uppercase border-l-2 border-primary whitespace-nowrap hidden sm:inline-block">${project.secondaryBadge}</span>
+                            </div>
+                        </div>
+                        <span class="material-symbols-outlined text-primary text-3xl shrink-0">open_in_new</span>
+                    </div>
+                    <p class="text-on-surface-variant text-sm mb-6 line-clamp-3">${project.summary}</p>
+                    <div class="grid grid-cols-2 md:grid-cols-${project.stats.length > 2 ? 4 : 2} gap-6 mt-auto">${statItems}</div>
+                </div>
+            </div>
+        `;
+    }
+
+    function renderProjects(list) {
+        projectGrid.innerHTML = list.map(createProjectCard).join('');
+        projectGrid.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('click', () => openModal(card));
+        });
+    }
+
+    function setActiveFilter(button) {
+        filterButtons.forEach(btn => {
+            btn.classList.remove('bg-primary', 'text-on-primary', 'border-primary');
+            btn.classList.add('border-outline-variant/50', 'text-on-surface-variant');
+        });
+        button.classList.remove('border-outline-variant/50', 'text-on-surface-variant');
+        button.classList.add('bg-primary', 'text-on-primary', 'border-primary');
+    }
+
+    function filterProjects(category, button) {
+        const cards = projectGrid.querySelectorAll('.project-card');
+        cards.forEach(card => {
+            const matches = category === 'All' || card.dataset.category === category;
+            card.classList.toggle('hidden', !matches);
+        });
+        setActiveFilter(button);
+    }
+
+    function openModal(element) {
+        const project = {
+            title: element.dataset.title,
+            category: element.dataset.category,
+            fullDesc: element.dataset.fullDesc,
+            tags: element.dataset.tags.split(',').map(tag => tag.trim()).filter(Boolean),
+            link: element.dataset.link
+        };
+
+        modalTitle.innerText = project.title;
+        modalCategory.innerText = project.category;
+        modalDesc.innerHTML = project.fullDesc;
+        modalTags.innerHTML = '';
+
+        project.tags.forEach(tag => {
+            const badge = document.createElement('span');
+            badge.className = 'bg-secondary-container text-on-secondary-container px-3 py-1 text-[0.6rem] font-bold tracking-widest uppercase';
+            badge.innerText = tag;
+            modalTags.appendChild(badge);
+        });
+
+        if (project.link && project.link !== 'null') {
+            modalLink.href = project.link;
+            modalLink.hidden = false;
+        } else {
+            modalLink.hidden = true;
+        }
+
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        document.body.style.overflow = '';
+    }
+
+    modalBackdrop.addEventListener('click', closeModal);
+    document.addEventListener('keydown', event => {
+        if (event.key === 'Escape') {
+            closeModal();
+        }
+    });
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => filterProjects(button.dataset.category, button));
+    });
+
+    renderProjects(projects);
+</script>
+
+</body></html>
