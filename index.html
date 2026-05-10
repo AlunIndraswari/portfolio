@@ -104,7 +104,20 @@
         <a class="font-headline text-sm tracking-tight text-[#dae2fd] hover:text-[#00e676] transition-colors duration-300" href="projects.html">projects</a>
         <a class="font-headline text-sm tracking-tight text-[#dae2fd] hover:text-[#00e676] transition-colors duration-300" href="blog.html">blog</a>
         <a class="font-headline text-sm tracking-tight text-[#dae2fd] hover:text-[#00e676] transition-colors duration-300" href="contact.html">contact</a>
+    </div>
+    <button id="hamburger-btn" class="md:hidden text-[#dae2fd] hover:text-[#00e676] transition-colors duration-300">
+        <span class="material-symbols-outlined">menu</span>
+    </button>
 </nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-[#0b1326]/95 backdrop-blur-xl z-40 hidden md:hidden flex flex-col items-center justify-center gap-8">
+    <a class="font-headline text-lg tracking-tight text-[#dae2fd] hover:text-[#00e676] transition-colors duration-300" href="home.html">home</a>
+    <a class="font-headline text-lg tracking-tight text-[#dae2fd] hover:text-[#00e676] transition-colors duration-300" href="projects.html">projects</a>
+    <a class="font-headline text-lg tracking-tight text-[#dae2fd] hover:text-[#00e676] transition-colors duration-300" href="blog.html">blog</a>
+    <a class="font-headline text-lg tracking-tight text-[#dae2fd] hover:text-[#00e676] transition-colors duration-300" href="contact.html">contact</a>
+</div>
+
 <!-- Hero Section -->
 <section class="relative flex items-center px-10 py-12 md:py-16 data-grid-pattern">
     <div class="max-w-5xl">
@@ -148,4 +161,22 @@
         © 2026 ALUN INDRASWARI. 
     </div>
 </footer>
+
+<script>
+    // Hamburger Menu Toggle
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburgerBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close menu when clicking on a link
+    mobileMenu.addEventListener('click', (e) => {
+        if (e.target.tagName === 'A') {
+            mobileMenu.classList.add('hidden');
+        }
+    });
+</script>
+
 </body></html>
